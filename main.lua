@@ -16,3 +16,9 @@ function love.update(dt)
   Timer.update(dt)
   TEsound.cleanup()
 end
+
+function love.keypressed(key,scancode,isrepeat)
+  if scancode == 'escape' then
+    love.event.quit()
+  end
+end
